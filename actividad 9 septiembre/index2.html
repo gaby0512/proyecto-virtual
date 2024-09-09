@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ejercicio 2</title> 
+    <script src="js/main2.js"></script>
+    <link rel="stylesheet" href="estilos/estilos2.css"> 
+</head>
+<body onload="iniciar();"> 
+    
+    <h1 id="titulo1">Pase de Imágenes automático</h1> <!-- Encabezado principal de la página -->
+    
+    <div id="cajaSlide">
+        <img id="imgSlide" src="./images/img1.jpg" title="Imagen" alt="Imagen" onclick="rotarImagenes();"> <!-- Imagen principal que se mostrará y cambiará automáticamente -->
+       
+        
+        <br/><br> <!-- Añade dos saltos de línea para separar el contenido -->
+  
+        <form>
+            <!-- Botón para detener el pase automático de imágenes -->
+            <input type="button" value="Parar" onclick="clearInterval(temporizador);"><!-- Botón para detener el paso automático de las imágenes -->
+            <input type="button" value="Continuar" onclick="iniciar();"> <!-- Botón para continuar el pase automático de imágenes -->
+
+        </form>
+    </div>
+    
+</body>
+</html>
